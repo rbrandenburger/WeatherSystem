@@ -1,0 +1,7 @@
+
+The temp is: 26.899999618530273C or 80.4199993133545F, and the humidity is: 58.599998474121094%
+Sent file successfully
+The temp is: 27.0C or 80.6F, and the humidity is: 62.29999923706055%
+Sent file successfully
+The temp is: 26.899999618530273C or 80.4199993133545F, and the humidity is: 63.400001525878906%
+Sent file successfully
