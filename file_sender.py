@@ -23,8 +23,8 @@ class Sender():
 			
 			#Place file in web server
 			with sftp.cd(server_path):
-				sftp.remove(local_file)
 				sftp.put(local_file, confirm=True)
+			
 				
 			print("Sent file successfully")
 			with open('log.txt', 'a') as log:
@@ -36,7 +36,7 @@ class Sender():
 			print("Problem sending file")
 			with open('log.txt', 'a') as log:
 				log.write("Problem sending file\n")
-				log.write(e)
+				log.write(repr(e))
 			print(e)
 			return 0
 		
