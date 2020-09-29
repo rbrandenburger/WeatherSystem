@@ -43,11 +43,11 @@ if __name__ == "__main__":
 			log.write("The temp is: {}C or {}F, and the humidity is: {}%\n".format(weather['tempC'], weather['tempF'], weather['humidity']))
 		
 		#Write out file
-		with open('data.txt', 'w') as outfile:
+		with open('data.json', 'w') as outfile:
 			json.dump(weather, outfile)
 		
 		#Send json file
-		result = sender.send('/home/remipzuw/test','data.txt')
+		result = sender.send('/home/remipzuw/weatherApp','data.json')
 		
 		#Check for error
 		if(result == 0):
