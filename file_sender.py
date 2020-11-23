@@ -25,11 +25,6 @@ class Sender():
 			with sftp.cd(server_path):
 				sftp.put(local_file, confirm=True)
 			
-				
-			print("Sent file successfully")
-			with open('log.txt', 'a') as log:
-				log.write("Sent file successfully\n")
-			
 			return 1
 			
 		except Exception as e:
