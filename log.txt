@@ -1,2 +1,0 @@
-Problem sending file
-FileNotFoundError(2, 'No such file')2020-11-13 19:12:39.339786 | There was an error with sending the file out
